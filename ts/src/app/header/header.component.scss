@@ -1,11 +1,12 @@
 .barra {
-    width: 1100px;
-    height:  70px; /* Altura automática para acomodar o conteúdo */
+    width: 1114px;
+    height:  80px; /* Altura automática para acomodar o conteúdo */
     background-color: #FDF1EB; /* Cor de fundo da barra */
     margin-top: -29px;
     display: flex;
     flex-direction: column; /* Orientação vertical */
     align-items: flex-start; /* Alinhamento à esquerda */
+    margin-left: -90px;
 }
 
 .barra h6 {
