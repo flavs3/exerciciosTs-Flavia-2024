@@ -1,0 +1,40 @@
+.menu-lateral {
+    width: 150px;
+    height: 100px;
+    background-color: #FFFFFF; /* Cor de fundo do menu */
+  }
+  
+  .menu-lateral button {
+    width: 100%;
+    height: 35px; /* Altura de cada botão */
+    background-color: #FFFFFF; /* Cor de fundo dos botões */
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #725C5C;
+    border-bottom: 1px solid #E7E7E7;
+
+  }
+  
+  .menu-lateral button:hover {
+    background-color: #FDF1EB;
+    background-image: linear-gradient(90deg, #FFB455 0, #ED7839 100%);
+    background-size: 5px 100%; /* Largura e altura do gradiente */
+    background-repeat: no-repeat; /* Evita repetição do gradiente */
+    background-position: left; /* Posiciona o gradiente à direita */
+    
+  }
+
+
+  .menu-lateral img {
+    width: 100%;
+    max-width: 220px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-bottom: 10px; /* Espaçamento entre as imagens e os botões */
+    margin-top: -10px;
+    margin-left: -10px;
+  }
