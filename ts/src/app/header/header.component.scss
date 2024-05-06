@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 .barra {
     width: 1114px;
     height:  80px; /* Altura automática para acomodar o conteúdo */
@@ -7,6 +11,7 @@
     flex-direction: column; /* Orientação vertical */
     align-items: flex-start; /* Alinhamento à esquerda */
     margin-left: -90px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .barra h6 {
@@ -23,7 +28,6 @@
     font-size: 12px; /* Tamanho da fonte para h3 */
     color: #725C5C; /* Cor do texto para h3 */
     margin: 2px 0; /* Margem superior e inferior para h3 */
-    font-weight: bold; /* Negrito para h3 */
     margin-left: 22px;    
 }
 
