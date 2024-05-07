@@ -25,6 +25,7 @@
 
   .conteudoPrincipal h2 {
     font-size: 29px;
+    color: #ED7839;
 }
 
 .btn-show-more {
@@ -34,4 +35,33 @@
 
 .btn-show-more:hover {
   text-decoration: underline;
+}
+
+.text-compartilhe {
+  color: #ED7839;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-icon {
+  margin: 0 20px;
+}
+
+.text-questions {
+  text-align: center;
+  font-size: 17px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.label-form {
+  font-weight: bold;
+  color: #ED7839; /* Cor do texto */
+  font-family: 'Roboto', sans-serif;
 }

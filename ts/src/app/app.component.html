@@ -18,15 +18,39 @@
             <span class="btn-show-more" (click)="toggleShowMore()">ver mais</span>
           </p>
           <div class="expandido" *ngIf="showMore">
-            <p>Este é o conteúdo expandido que será mostrado quando o botão "Ver Mais" for clicado.</p>
+            <p>Conteúdo expandido </p>
           </div>
         </div>
         <div class="custom-box">
           <div class="custom-box-header">
             <h5>Discussões</h5>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant...
-          ver mais</p>
+          <!-- Adiciona um ng-container para envolver o conteúdo -->
+          <ng-container *ngIf="!showTopicForm">
+            <p class="text-compartilhe"> Compartilhe suas ideias ou dúvidas com os autores! </p>
+            <div class="image-container">
+              <img class="image-icon" src="../../assets/icone1.png">
+              <img class="image-icon" src="../../assets/icone2.png">
+              <img class="image-icon" src="../../assets/icone3.png">
+            </div>
+            <p class="text-questions"> Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+          </ng-container>
+
+          <!-- Adiciona um ng-container para o formulário, aparecerá apenas quando showTopicForm for true -->
+          <ng-container *ngIf="showTopicForm">
+            <p class="text-questions"> Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+            <!-- Formulário para inserir Assunto, Nome e Comentário -->
+            <form>
+              <label class="label-form" for="assunto">Assunto</label> <br>
+              <input type="text" id="assunto" name="assunto" placeholder="Defina um tópico sucinto para notificar os autores..."><br>
+              <label class="label-form" id="conteudo">Conteúdo</label><br>
+              <input id="conteudo" name="conteudo" rows="4" cols="50"> <br>
+              <button type="submit">Enviar</button>
+            </form>
+          </ng-container>
+
+          <!-- Botão "Criar Tópico" -->
+          <button class="btn-create-topic" (click)="toggleTopicForm()">Criar Tópico</button>
         </div>
       </div>
     </div>

@@ -6,10 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'DevChuva';
+  title = 'BotaoExpandir';
   showMore = false;
+  showTopicForm = false;
 
   toggleShowMore() {
     this.showMore = !this.showMore;
+  }
+
+  toggleTopicForm() {
+    this.showTopicForm = !this.showTopicForm;
+  }
+
+  onSubmit() {
+    console.log('Formulário Enviado!');
   }
 }
