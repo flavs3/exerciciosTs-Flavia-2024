@@ -65,3 +65,26 @@
   color: #ED7839; /* Cor do texto */
   font-family: 'Roboto', sans-serif;
 }
+
+.input-coment {
+  width: 100%; /* Define a largura do input para 100% */
+  border: 1px solid #ccc; /* Define uma borda com 1px de largura e cor cinza */
+  padding: 8px; /* Adiciona um espaço interno de 8px dentro do input */
+  margin-bottom: 10px;
+  
+}
+
+.containerButton {
+  display: flex;
+  justify-content: flex-end; /* Alinha os itens flexíveis para a direita */
+  background-color: #EAF1F2; /* Define a cor de fundo para a parte esquerda até o final da tela */
+  border: 1px solid #ccc;
+}
+
+.button-enviar {
+  background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
