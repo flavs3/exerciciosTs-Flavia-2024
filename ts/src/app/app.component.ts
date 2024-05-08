@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'BotaoExpandir';
   showMore = false;
   showTopicForm = false;
+  
 
   toggleShowMore() {
     this.showMore = !this.showMore;
@@ -21,4 +22,11 @@ export class AppComponent {
   onSubmit() {
     console.log('Formulário Enviado!');
   }
+
+  expandComment(event: MouseEvent) {
+    const clickedElement = event.currentTarget as HTMLElement;
+    const expandedComment = clickedElement.nextElementSibling as HTMLElement;
+    expandedComment.classList.toggle("show");
+  }
+  
 }
