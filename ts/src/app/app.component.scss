@@ -6,16 +6,14 @@
   margin-left: -80px;
 }
 
-
 .custom-box {
-    background-color: white;
-    border: 1px solid #ECECEC;
-    margin-bottom: 10px; /* Espaçamento entre os boxes */
-    margin-top: 20px;
-    font-family: 'Quicksand', sans-serif;
-  }
-  
-  .custom-box-header {
+  background-color: white;
+  border: 1px solid #ECECEC;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: 'Quicksand', sans-serif;
+
+  &-header {
     background-color: #FDF1EB;
     border-bottom: 1px solid #ECECEC;
     padding-bottom: 10px;
@@ -23,68 +21,67 @@
     font-family: 'Roboto', sans-serif;
   }
 
-  .conteudoPrincipal h2 {
+  h2 {
     font-size: 29px;
     color: #ED7839;
-}
+  }
 
-.btn-show-more {
-  color: #ED7839;
-  cursor: pointer;
-}
+  .btn-show-more {
+    color: #ED7839;
+    cursor:pointer;
 
-.btn-show-more:hover {
-  text-decoration: underline;
-}
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
-.text-compartilhe {
-  color: #ED7839;
-  font-weight: bold;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
+  .text-compartilhe {
+    color: #ED7839;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
 
-}
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
 
-.image-container {
-  display: flex;
-  justify-content: center;
-}
+  .image-icon {
+    margin: 0 20px;
+  }
 
-.image-icon {
-  margin: 0 20px;
-}
+  .text-questions {
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Quicksand', sans-serif;
+  }
 
-.text-questions {
-  text-align: center;
-  font-size: 17px;
-  font-family: 'Quicksand', sans-serif;
-}
+  .label-form {
+    font-weight: bold;
+    color: #ED7839;
+    font-family: 'Roboto', sans-serif;
+  }
 
-.label-form {
-  font-weight: bold;
-  color: #ED7839; /* Cor do texto */
-  font-family: 'Roboto', sans-serif;
-}
+  .subject {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
 
-.input-coment {
-  width: 100%; /* Define a largura do input para 100% */
-  border: 1px solid #ccc; /* Define uma borda com 1px de largura e cor cinza */
-  padding: 8px; /* Adiciona um espaço interno de 8px dentro do input */
-  margin-bottom: 10px;
-  
-}
+  .containerButton {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #EAF1F2;
+    border: 1px solid #ccc;
+  }
 
-.containerButton {
-  display: flex;
-  justify-content: flex-end; /* Alinha os itens flexíveis para a direita */
-  background-color: #EAF1F2; /* Define a cor de fundo para a parte esquerda até o final da tela */
-  border: 1px solid #ccc;
-}
-
-.button-enviar {
-  background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
-  color: #FFFFFF;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+  .button-enviar {
+    background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
 }

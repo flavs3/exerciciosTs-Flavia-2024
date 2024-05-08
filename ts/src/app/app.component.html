@@ -14,7 +14,7 @@
           <div class="custom-box-header">
             <h5>Resumo</h5>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant...
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsa
             <span class="btn-show-more" (click)="toggleShowMore()">ver mais</span>
           </p>
           <div class="expandido" *ngIf="showMore">
@@ -25,7 +25,6 @@
           <div class="custom-box-header">
             <h5>Discussões</h5>
           </div>
-          <!-- Adiciona um ng-container para envolver o conteúdo -->
           <ng-container *ngIf="!showTopicForm">
             <p class="text-compartilhe"> Compartilhe suas ideias ou dúvidas com os autores! </p>
             <div class="image-container">
@@ -34,28 +33,20 @@
               <img class="image-icon" src="../../assets/icone3.png">
             </div>
             <p class="text-questions"> Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-          
-            <!-- Botão "Criar Tópico" -->
-            <button class="btn-create-topic" (click)="toggleTopicForm()">Criar Tópico</button>
-
+            <button class="btn-create-topic" alt="criar tópico" (click)="toggleTopicForm()">criar tópico</button>
           </ng-container>
-
-          <!-- Adiciona um ng-container para o formulário, aparecerá apenas quando showTopicForm for true -->
           <ng-container *ngIf="showTopicForm">
             <p class="text-questions"> Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
-            <!-- Formulário para inserir Assunto, Nome e Comentário -->
             <form>
-              <label class="label-form" for="assunto">Assunto</label> <br>
-              <input class="input-coment" type="text" id="assunto" name="assunto" placeholder="Defina um tópico sucinto para notificar os autores..."><br>
-                <label class="label-form" id="conteudo">Conteúdo</label><br>
-                <input class="input-coment" id="conteudo" name="conteudo" rows="4" cols="50"> <br>
-                <div class="containerButton">
-                  <button class="button-enviar" type="submit">Enviar</button>
-                </div>
+              <label class="label-form" alt="Assunto" for="Assunto">Assunto</label> <br>
+              <input class="subject" type="text" id="Assunto" name="Assunto" placeholder="Defina um tópico sucinto para notificar os autores..."><br>
+              <label class="label-form" alt="Conteúdo" id="Conteúdo">Conteúdo</label><br>
+              <textarea class="input-coment" id="Conteúdo" name="Conteúdo" rows="4" cols="50"></textarea> <br>
+              <div class="containerButton">
+                <button class="button-enviar" alt="Enviar" type="submit">Enviar</button>
+              </div>
             </form>
           </ng-container>
-
-          <!-- Botão "Criar Tópico" -->
         </div>
       </div>
     </div>
