@@ -26,8 +26,9 @@
           <div class="custom-box-header">
             <h5>Discussões</h5>
           </div>
-          <ng-container *ngIf="!showTopicForm">
-            <p class="text-compartilhe"> Compartilhe suas ideias ou dúvidas com os autores! </p>
+          <div>
+            <ng-container *ngIf="!showTopicForm && !submitted">
+              <p class="text-compartilhe"> Compartilhe suas ideias ou dúvidas com os autores! </p>
             <div class="image-container">
               <img class="image-icon" src="../../assets/icone1.png">
               <img class="image-icon" src="../../assets/icone2.png">
@@ -36,7 +37,8 @@
             <p class="text-questions"> Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
             <button class="btn-create-topic" alt="criar tópico" (click)="toggleTopicForm()"> + criar tópico</button>
           </ng-container>
-          <ng-container *ngIf="showTopicForm">
+          </div>
+          <ng-container *ngIf="showTopicForm && !submitted">
             <p class="text-questions"> Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
             <form>
               <label class="label-form" alt="Assunto" for="Assunto">Assunto</label> <br>
@@ -44,10 +46,16 @@
               <label class="label-form" alt="Conteúdo" id="Conteúdo">Conteúdo</label><br>
               <textarea class="input-coment" id="Conteúdo" name="Conteúdo" rows="4" cols="50"></textarea> <br>
               <div class="containerButton">
-                <button class="button-enviar" alt="Enviar" type="submit">Enviar</button>  
+                <button class="button-enviar" alt="Enviar" type="submit" (click)=" onSubmit()">Enviar</button>
               </div>
             </form>
           </ng-container>
+
+          <div *ngIf="submitted">
+            <p class="success-message">Mensagem enviada com sucesso!</p>
+            <button class="btn-create-topic" (click)="toggleTopicForm()">Enviar outra mensagem</button>
+          </div>
+
           <div class="answered-topic" (click)="expandComment($event)">
             <p class="ops-topic-subject">Assunto da pergunta aparece aqui</p>
             <p class="comments">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
