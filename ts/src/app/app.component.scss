@@ -11,12 +11,14 @@ h2 {
   font-weight: bold;
   color: #ED7839;
   width: 800px;
+}
 
-
-
+h5 {
+  margin-left: 20px;
 }
 
 .custom-box {
+  width: 1030px;
   background-color: white;
   border: 1px solid #ECECEC;
   margin-bottom: 10px;
@@ -27,6 +29,7 @@ h2 {
     background-color: #FDF1EB;
     border-bottom: 1px solid #ECECEC;
     padding-bottom: 10px;
+    padding-top: 10px;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
   }
