@@ -1,24 +1,23 @@
-  import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 
-  @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
-  })
-  export class AppComponent {
-    title = 'BotaoExpandir';
-    showMore = false;
-    showTopicForm = false;
-    submitted = false;
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+  title = 'BotaoExpandir';
+  showMore = false;
+  showTopicForm = false;
+  submitted = false;
 
-    
-    toggleShowMore() {
-      this.showMore = !this.showMore;
-    }
+  toggleShowMore() {
+    this.showMore = !this.showMore;
+  }
 
-    toggleTopicForm() {
-      this.showTopicForm = !this.showTopicForm;
-    }
+  toggleTopicForm() {
+    this.showTopicForm = !this.showTopicForm;
+  }
 
   onSubmit() {
     console.log('Formulário Enviado!');
@@ -30,5 +29,4 @@
     const expandedComment = clickedElement.nextElementSibling as HTMLElement;
     expandedComment.classList.toggle("show");
   }
-    }
-  
+}
