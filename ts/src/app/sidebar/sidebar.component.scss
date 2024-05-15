@@ -22,7 +22,8 @@
   .custom-box-header {
     background-color: #FDF1EB;
     border-bottom: 1px solid #ECECEC;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
   }
@@ -48,4 +49,26 @@
   .universities {
     color: #ADA0A0;
     font-size: 10px;
+}
+
+.imagemDownload {
+  width: 100px; 
+  height: auto;
+  padding: 2px;
+}
+
+.imagemFavoritar {
+  width: 40px; 
+  height: auto;
+  padding: 2px;
+}
+
+.imagemDoi {
+  width: 40px; 
+  height: auto;
+  padding: 2px;
+}
+
+h5 {
+  margin-left: 10px;
 }

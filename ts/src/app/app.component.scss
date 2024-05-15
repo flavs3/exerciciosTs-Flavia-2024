@@ -69,6 +69,7 @@ h5 {
     font-weight: bold;
     color: #ED7839;
     font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
   }
 
   .subject {
@@ -90,6 +91,7 @@ h5 {
     justify-content: flex-end;
     background-color: #EAF1F2;
     border: 1px solid #ccc;
+    margin-top: -17px;
   }
 
   .button-enviar {
@@ -109,6 +111,8 @@ h5 {
     display: block; /* Garantindo que o botão seja exibido como um bloco */
     cursor: pointer;
     box-shadow: 0px 2px 2px 0px #0000003D;
+    border-radius: 5px 5px 5px 5px;
+    opacity: 0px;
 
   }
 
@@ -141,6 +145,18 @@ h5 {
     background: #F8F8F8;
 
   }
+
+  .comments-container .row {
+    display:flex;
+    align-items: center; 
+    justify-content:right;
+    margin-right: 10px;
+    margin-top: -30px;
+    font-weight: bold;
+   color: #ED7839;
+}
+
+
 
   .success-message {
     color:#ED7839;
@@ -188,7 +204,9 @@ h5 {
   position: relative;
   margin-left: 550px;
 
-
+.icon-autor {
+  position: relative;
+}
 
 }
 }
